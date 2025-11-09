@@ -204,7 +204,7 @@ console.log("e drop",e)
      if (!localApiKey) {
       throw new Error('Please set your Gemini API key in settings');
     }
-    const response = await fetch(`http://localhost:8080/api/code-assist`, {
+    const response = await fetch(`https://code-assistant-backend.vercel.app/api/code-assist`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -251,6 +251,7 @@ console.log("e drop",e)
           }]);
     
       });
+      setFiles([]);
     } catch (error) {
       setMessages(prev => [...prev, { 
         role: 'model', 
