@@ -9,6 +9,7 @@
     For running backend locally:
     First change API in App.jsx from hosted url to localhost url (go in callBackendAPI funtion)-
     and change https://code-assistant-backend.vercel.app/api/code-assist  to  http://localhost:8080/api/code-assist
+    or simply uncomment the localhost line and comment the hosted line.
     Then do -    
        On Terminal 2  run the Command (for directory change): cd backend
             then run: npm i 
